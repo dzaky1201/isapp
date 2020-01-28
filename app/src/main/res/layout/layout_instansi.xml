@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="2dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewInstansi"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:padding="4dp"/>
+            <TextView
+                android:id="@+id/textViewNamaInstansi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageViewInstansi"
+                android:text="Nama Instansi"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/textViewJenisLayanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageViewInstansi"
+                android:text="jasa"
+                android:layout_below="@id/textViewNamaInstansi"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/textViewLembaga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageViewInstansi"
+                android:text="nomor hp"
+                android:layout_below="@id/textViewJenisLayanan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/textViewAlamatInstansi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageViewInstansi"
+                android:text="alamat"
+                android:layout_below="@id/textViewLembaga"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
